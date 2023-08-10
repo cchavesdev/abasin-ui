@@ -30,7 +30,7 @@
         max-width: 900px;
         margin: auto;
         text-align: center;
-        margin-top: 210px;
+        padding-top: 210px;
 
         p {
             color: #FFF;
@@ -466,4 +466,9 @@
 
 .bg-initial {
     background: none !important;
+}
+.listing-page{
+    .tertiary-hero-block{
+        background: initial;
+    }
 }

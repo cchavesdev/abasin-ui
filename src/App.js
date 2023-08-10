@@ -11,17 +11,24 @@ import { Promo } from './homePage/Promo';
 import { Events } from './homePage/Events';
 import { Blog } from './homePage/Blog';
 import { TertiaryHero } from './homePage/TertiaryHero';
+import { Footer } from './footer/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HomePage } from './homePage/HomePage';
+import { StandardPage } from './standardPage/StandardPage';
+import { ListingPage } from './listingPage/ListingPage';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Hero></Hero>
-      <SecondaryHero></SecondaryHero>
-      <Promo></Promo>
-      <Events></Events>
-      <Blog></Blog>
-      <TertiaryHero></TertiaryHero>
+      <Router>
+        <Routes>
+          <Route path='/' Component={HomePage}></Route>
+          <Route path='/standard' Component={StandardPage}></Route>
+          <Route path='/listing' Component={ListingPage}></Route>
+        </Routes>
+      </Router>
+      <Footer></Footer>
     </div>
   );
 }

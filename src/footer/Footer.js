@@ -3,14 +3,14 @@ import React from 'react'
 export const Footer = () => {
     return (
         <footer>
-            <img src="/img/footer-logo.svg" class="logo">
+            <img src="/img/footer-logo.svg" class="logo"/>
                 <div class="social-bar">
                     <div>
-                        <img src="/img/yt.svg" alt="">
+                        <img src="/img/yt.svg" alt=""/>
                     </div>
-                    <div> <img src="/img/fb.svg" alt=""></div>
-                    <div><img src="/img/tw.svg" alt=""></div>
-                    <div> <img src="/img/ig.svg" alt=""> </div>
+                    <div> <img src="/img/fb.svg" alt=""/></div>
+                    <div><img src="/img/tw.svg" alt=""/></div>
+                    <div> <img src="/img/ig.svg" alt=""/> </div>
 
 
 
@@ -39,7 +39,7 @@ export const Footer = () => {
                 <div class="sign-up-form">
                     <h3>Sign up to Get Exclusive Mountain Updates</h3>
                     <form>
-                        <input placeholder="Email Address">
+                        <input placeholder="Email Address"/>
                             <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
                                     <path

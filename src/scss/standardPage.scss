@@ -1,0 +1,469 @@
+.hero {
+    background: linear-gradient(180deg, #03152A 0%, rgba(3, 21, 42, 0.00) 40%), #002F65;
+    height: auto;
+
+    // .hero-img {
+    //    
+    //     background-size: cover;
+    margin-bottom: 134px;
+    position: relative;
+
+    .blurred-bar {
+        height: 20vh;
+        width: 100%;
+        background: #03152A;
+        background: linear-gradient(0deg, #03152a 0%, #011832 40%, rgba(0, 0, 0, 0) 100%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    img {
+        width: 100%;
+        max-height: 118vh;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .hero-content-box {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        margin-top: 210px;
+
+        p {
+            color: #FFF;
+            text-align: center;
+
+            /* P1/Left */
+            font-family: Nimbus Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 34px;
+            /* 141.667% */
+            letter-spacing: -0.24px;
+            margin-top: 40px;
+            opacity: 0.6;
+        }
+
+        h2 {
+
+            text-align: center;
+        }
+
+        @media(max-width: 992px) {
+            h2 {
+
+                font-size: 48px;
+                font-style: normal;
+
+                line-height: 44px;
+                /* 91.667% */
+                letter-spacing: -1.44px;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #FFF;
+                text-align: center;
+
+                /* P1/Left */
+                font-family: Nimbus Sans;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 34px;
+                /* 141.667% */
+                letter-spacing: -0.24px;
+            }
+        }
+    }
+}
+
+.abasin-info {
+    color: #FFF;
+
+    /* P1/Left */
+    font-family: Nimbus Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    /* 141.667% */
+    letter-spacing: -0.24px;
+}
+
+.img-100 {
+    width: 100%;
+}
+
+.slideshow {
+    position: relative;
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+
+    }
+
+    .swiper-button-next {
+        bottom: 10px !important;
+        top: initial !important;
+        // right: 45% !important;
+        left: calc(50% + 40px) !important;
+        transform: translateX(-50%) !important;
+        background-image: url('/img/slidearrow.svg');
+        background-repeat: no-repeat;
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        background-position: center;
+        border-radius: 100%;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: '';
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: '';
+    }
+
+    .swiper-wrapper {
+        height: auto !important;
+    }
+
+    .swiper-button-prev {
+        bottom: 10px !important;
+        top: initial !important;
+        // left: 45% !important;
+        left: calc(50% - 40px) !important;
+        transform: translateX(-50%) !important;
+        background-image: url('/img/slidearrow.svg');
+        transform: rotate(180deg) !important;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        background-position: center;
+        border-radius: 100%;
+    }
+
+    // .navigation-controls{
+    //     background-color: red;
+    //     position: relative;
+    // }
+
+}
+
+.horizontal-card-list {
+    margin-top: 181px;
+    background: rgb(3, 21, 42);
+    background: linear-gradient(0deg, rgba(3, 21, 42, 1) 0%, rgba(0, 47, 101, 1) 53%, rgba(0, 47, 101, 1) 53%, rgba(3, 21, 42, 1) 100%);
+
+    h3 {
+
+        max-width: 900px;
+        margin: auto;
+        margin-bottom: 145px;
+    }
+
+    .abasin-card-h {
+        margin-bottom: 90px;
+
+        .img-container {
+            padding-right: 50px;
+        }
+
+        .text-container {
+            padding-left: 50px;
+
+            h5 {
+                margin-bottom: 24px;
+            }
+
+            button {
+                margin-top: 50px;
+            }
+        }
+
+        &:nth-child(odd) {
+            .img-container {
+                order: 2;
+                padding-right: initial;
+                padding-left: 50px;
+            }
+
+            .text-container {
+                padding-right: initial;
+                padding-left: 50px;
+            }
+        }
+
+    }
+
+    @media (max-width: 992px) {
+        h3 {
+            font-size: 40px;
+            max-width: 100%;
+            font-family: Flama;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 36px;
+            /* 90% */
+            letter-spacing: -1.2px;
+            text-transform: uppercase;
+        }
+
+        .abasin-card-h {
+            .text-container {
+                h5 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+}
+
+.max-width-850px {
+
+    max-width: 850px;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.lessons-listing-container {
+    margin-top: 150px;
+
+
+    width: 100%;
+
+    .lesson {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 55px;
+
+        &:nth-child(even) {
+            @media (min-width: 993px) {
+                .lesson-img-box {
+                    order: 2;
+                    padding-right: initial;
+                    padding-left: 50px;
+                }
+
+                .lesson-info-box {
+                    padding-right: 50px;
+                    padding-left: initial;
+                }
+            }
+        }
+
+        .lesson-img-box {
+            flex: 0 50%;
+            padding-right: 50px;
+            width: 50%;
+
+            @media (max-width: 992px) {
+                width: 100%;
+                flex: 0 100%;
+                padding: 0px;
+            }
+        }
+
+        .lesson-info-box {
+            flex: 0 50%;
+            padding-left: 50px;
+
+            @media (max-width: 992px) {
+                width: 100%;
+                flex: 0 100%;
+                padding: 0px;
+                padding-top: 64px;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+
+            button {
+                &:not(:last-child) {
+                    margin-right: 23px;
+                }
+            }
+
+            .details-container {
+                margin-top: 50px;
+
+                .details {
+                    display: flex;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+                    padding: 10px 0px;
+
+                    .head {
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Nimbus Sans;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.48px;
+                        margin-right: 18px;
+                        text-transform: uppercase;
+                    }
+
+                    .detail {
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Nimbus Sans;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.48px;
+                        opacity: 0.6;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.people-lister {
+    h5 {
+        margin: 113px auto 97px auto;
+        max-width: 554px;
+        display: block;
+
+    }
+
+    .people-container {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+
+        .person {
+            max-width: 333px;
+
+            @media(max-width: 992px) {
+                flex: 0 100%;
+                width: 100%;
+                padding: 0;
+                max-width: 100%;
+                margin-bottom: 50px;
+
+                img {
+                    width: 100%;
+                }
+
+                .job-title {
+                    margin-top: 20px;
+                }
+            }
+
+            .job-title {
+
+                display: block;
+                color: #FFF;
+                font-family: Roboto Condensed;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 42px;
+                /* 210% */
+                text-transform: uppercase;
+            }
+
+            .name {
+                display: block;
+                color: #FFF;
+                font-family: Flama;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 750;
+                line-height: 40px;
+                /* 133.333% */
+                letter-spacing: -0.3px;
+                text-transform: uppercase;
+            }
+
+            .description {
+                color: #FFF;
+                font-family: Nimbus Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+                /* 125% */
+                opacity: 0.6;
+                display: block;
+            }
+        }
+    }
+}
+
+.molly-mountain {
+    margin-top: 160px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(180deg, #03152A 0%, rgba(3, 21, 42, 0) 45%), #002F65;
+    padding-top: 80px;
+    @media(max-width: 992px) {
+        padding-top: 150px;
+    }
+
+    img {
+        width: 100%;
+        z-index: 1;
+        position: relative;
+    }
+
+
+
+
+
+    .molly-hogan {
+        -webkit-text-stroke: 3px #ffffff;
+        color: transparent;
+        font-family: "Flama";
+        font-size: 150px;
+        font-weight: 400;
+
+
+        letter-spacing: -1.5px;
+        line-height: 133.3px;
+        position: absolute;
+        text-align: right;
+        top: 50px;
+        right: 9%;
+        max-width: 934px;
+
+        @media(max-width: 992px) {
+           
+                font-family: Flama;
+                font-size: 67px;
+               top: 0;
+               right:10px;
+               left: 10px;
+               max-width: 259px;
+               line-height: 62px; 
+               text-align: left;         
+        }
+
+    }
+
+
+
+}
+
+.bg-initial {
+    background: none !important;
+}

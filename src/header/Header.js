@@ -268,7 +268,7 @@ export const Header = () => {
                                                 37° <span class="temp">f</span> <span>Todays Low</span>
                                             </li>
                                             <li>
-                                                5 <span class="temp">MPH</span> <span>North West Wind</span>
+                                                5 <span class="ms-sm-2 temp"> MPH</span> <span>North West Wind</span>
                                             </li>
                                         </ul>
                                         <button>See full weather</button>

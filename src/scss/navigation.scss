@@ -480,6 +480,12 @@ ul.primary-nav {
                     text-transform: uppercase;
                     display: initial;
                     opacity: initial;
+                    @media (max-width: 1280px) {
+                        flex: 1;
+                        font-size: 29px;
+                        align-self: end;
+                        line-height: 45px;
+                    }
                 }
 
                 &.quantity {
@@ -493,6 +499,12 @@ ul.primary-nav {
                     text-transform: uppercase;
                     display: initial;
                     opacity: initial;
+
+                    @media (max-width: 1280px) {
+                       
+                        font-size: 29px;
+                    
+                    }
                 }
 
             }

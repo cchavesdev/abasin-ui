@@ -1,0 +1,318 @@
+#snowReport {
+    margin-top: 254px;
+
+    .sr-box-1 {
+
+        background: linear-gradient(180deg, #03152A 0%, rgba(3, 21, 42, 0.00) 100%), #002F65;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .sr-top {
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-right: 50px;
+        align-items: start;
+
+        h1 {
+            flex: 0 100%;
+            margin-bottom: 40px;
+        }
+
+        .snow-stas-box{
+            flex: 0 50%;
+        }
+
+        .snow-stats {
+            border-left: 4px solid #49AAF0;
+            flex: 0 50%;
+            padding-left: 20px;
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .numbers-box {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 50%;
+
+            .value-box {
+                display: flex;
+                flex-wrap: wrap;
+                flex: 0 100%;
+
+                .big-number {
+                    color: #FFF;
+                    font-family: Flama;
+                    font-size: 88.215px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%;
+                    letter-spacing: -2.646px;
+                    text-transform: uppercase;
+                    flex: 0 100%;
+                }
+
+                .small-desc {
+                    color: #FFF;
+                    font-family: Roboto Condensed;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    .sr-box-2 {
+        margin: 174px 50px;
+    }
+
+    .forecast-summary-box {
+        display: flex;
+        margin-top: 54px;
+        flex-wrap: wrap;
+        .weather {
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.10);
+            padding: 25px;
+            flex: 0 50%;
+            max-width: 650px;
+            @media(max-width: 992px){
+                flex: 0 100%;
+            }
+
+            .date {}
+
+            .temp-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                max-width: 450px;
+
+                p {
+
+                    font-family: Flama;
+                    font-size: 30.648px;
+
+
+                    span {
+                        font-size: 15.324px;
+
+                    }
+                }
+
+                .high-temp {
+
+                    color: #FFF;
+                    margin-right: 10px;
+                }
+
+                .weather-desc {
+                    flex: 0 100%;
+                    color: #FFF;
+
+                    /* P2/Left */
+                    font-family: Nimbus Sans;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 30px;
+                    /* 150% */
+                    letter-spacing: -0.2px;
+                    width: 100%;
+                    opacity: 0.6;
+                }
+            }
+
+        }
+
+        .forecast-stats-box {
+            display: flex;
+            border-left: 4px solid #49AAF0;
+            margin-left: 3%;
+            padding-left: 20px;
+            flex-wrap: wrap;
+            flex: 0 47%;
+            @media(max-width: 992px){
+                flex: 0 100%;
+                margin: 30px auto;
+            }
+            .f-stat {
+                flex: 0 47%;
+
+                // display: flex;
+                // flex-wrap: wrap;
+                // align-items: start;
+                @media(max-width: 992px){
+                    flex: 0 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: left;
+                }
+                h6 {
+                    color: #FFF;
+                    font-family: Flama;
+                    font-size: 88.215px;
+                    flex: 0 100%;
+                    @media(max-width: 992px){
+                        font-size: 60px;
+                        text-align: left;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-size: 44.108px;
+                        flex: 0 100%;
+                       
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    opacity: 0.6;
+                    font-family: Roboto Condensed;
+                    text-transform: uppercase;
+                    margin: 0;
+                    @media(max-width: 992px){
+                           
+                        
+                        
+                    }
+                }
+                &:not(:last-child){
+                   p{
+                    margin-bottom: 30px;
+                   }
+                }
+            }
+        }
+
+
+    }
+
+    .week-forecast-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .day-box {
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.10);
+            padding: 25px;
+            margin-top: 69px;
+            text-align: center;
+
+            p {
+                font-size: 24px;
+            }
+
+            &:last-child {
+                opacity: 0.2;
+            }
+        }
+
+        .temp-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            max-width: 450px;
+
+            p {
+
+                font-family: Flama;
+                font-size: 30.648px;
+
+
+                span {
+                    font-size: 15.324px;
+
+                }
+            }
+
+            .high-temp {
+
+                color: #FFF;
+                margin-right: 10px;
+            }
+
+            .weather-desc {
+                flex: 0 100%;
+                color: #FFF;
+
+                /* P2/Left */
+                font-family: Nimbus Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 30px;
+                /* 150% */
+                letter-spacing: -0.2px;
+                width: 100%;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    #planTrip {
+        height: 800px;
+        margin-top: 92px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+@media(max-width: 992px){
+    height: auto;
+}
+        .trip-box {
+            position: relative;
+            flex: 1;
+            max-height: 645px;
+            display: flex;
+
+            height: auto;
+
+            &:nth-child(2) {
+                margin: auto 10px;
+            }
+
+            &:nth-child(odd) {
+                margin-top: auto;
+            }
+
+            .overlay {
+                height: fit-content;
+                width: fit-content;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                text-align: center;
+                display: block;
+            }
+
+            @media(max-width: 992px) {
+                flex: 0 100%;
+                
+                margin-bottom: 20px;
+                &:nth-child(odd) {
+                    margin-top: 20px;
+                }
+                &:nth-child(2) {
+                    margin: initial
+                }
+            }
+        }
+    }
+}

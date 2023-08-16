@@ -17,6 +17,7 @@ import { HomePage } from './homePage/HomePage';
 import { StandardPage } from './standardPage/StandardPage';
 import { ListingPage } from './listingPage/ListingPage';
 import { Pattern } from './pattern/Pattern';
+import { SnowReport } from './snowreport/SnowReport';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/' Component={HomePage}></Route>
           <Route path='/standard' Component={StandardPage}></Route>
           <Route path='/listing' Component={ListingPage}></Route>
+          <Route path='/snow-report' Component={SnowReport}></Route>
           <Route path='/pattern-library' Component={Pattern}></Route>
         </Routes>
       </Router>

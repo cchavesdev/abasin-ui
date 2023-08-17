@@ -44,7 +44,7 @@ export const SnowReport = () => {
                         </div>
                         <button class="mt-5">See Forecast</button>
                     </div>
-                    
+
 
                     <div class="webcam-box">
                         <img class="img-fluid" src='/img/webcamfile.png' />
@@ -261,6 +261,462 @@ export const SnowReport = () => {
                         <img class="img-fluid" src='/img/sr-gettinghere.png' />
                         <div class="overlay">
                             <h6>Getting Here</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sr-box-2">
+                <div class="terrain-summary">
+                    <h1>Terrain & Lift Status</h1>
+                    <div className="d-flex flex-wrap summary-block">
+                        <div class="summary-box">
+                            <h5>75<span>/145</span></h5>
+                            <p>Open Runs</p>
+                        </div>
+                        <div class="summary-box">
+                            <h5>9<span>/9</span></h5>
+                            <p>Open Lifts</p>
+                        </div>
+                        <div class="summary-box">
+                            <h5>4<span>/7</span></h5>
+                            <p>Open Runs</p>
+                        </div>
+                    </div>
+                    <div class="symbology-block">
+                        <div class="sym-row">
+                            <div class="symbol-key">
+                                <span>Open:</span>
+                                <img src='/img/sr/open.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>In Progress:</span>
+                                <img src='/img/sr/inprogress.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>On Hold:</span>
+                                <img src='/img/sr/onhold.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>Closed:</span>
+                                <img src='/img/sr/closed.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>Groomed:</span>
+                                <img src='/img/sr/groomed.svg' />
+                            </div>
+                        </div>
+                        <div class="sym-row">
+                            <div class="symbol-key">
+                                <span>Easiest:</span>
+                                <img src='/img/sr/easy.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>Intermediate:</span>
+                                <img src='/img/sr/intermediate.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>Advanced:</span>
+                                <img src='/img/sr/advance.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>Experts Only:</span>
+                                <img src='/img/sr/expert.svg' />
+                            </div>
+                            <div class="symbol-key">
+                                <span>Terrain Park:</span>
+                                <img src='/img/sr/terrain.svg' />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sr-box-2">
+                <div className='mountain-box'>
+                    <div class="mountain-terrain-box">
+                        <span>Terrain:</span>
+                        <img src='/img/sr/easy.svg' />
+                        <img src='/img/sr/intermediate.svg' />
+                        <img src='/img/sr/advance.svg' />
+
+                    </div>
+                    <div class="mountain-heading-box">
+                        <h1>The Front Side </h1>
+                        <img src="/img/sr/open.svg" />
+                        <span>Open</span>
+                    </div>
+                    <div class="mountain-detail-box">
+                        <img class="img-fluid mtn-img" src="/img/sr/mountainex1.png" />
+                        <div class="trail-box">
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/closed.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/onhold.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/closed.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/intermediate.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/expert.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sr-box-2">
+                <div className='mountain-box'>
+                    <div class="mountain-terrain-box">
+                        <span>Terrain:</span>
+                        <img src='/img/sr/easy.svg' />
+                        <img src='/img/sr/intermediate.svg' />
+                        <img src='/img/sr/advance.svg' />
+
+                    </div>
+                    <div class="mountain-heading-box">
+                        <h1>Montezuma Bowl </h1>
+                        <img src="/img/sr/onhold.svg" />
+                        <span>Open</span>
+                    </div>
+                    <div class="mountain-detail-box">
+                        <img class="img-fluid mtn-img" src="/img/sr/mountainex1.png" />
+                        <div class="trail-box">
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/closed.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/onhold.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/closed.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/intermediate.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/expert.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sr-box-2">
+                <div className='mountain-box'>
+                    <div class="mountain-terrain-box">
+                        <span>Terrain:</span>
+                        <img src='/img/sr/easy.svg' />
+                        <img src='/img/sr/intermediate.svg' />
+                        <img src='/img/sr/advance.svg' />
+
+                    </div>
+                    <div class="mountain-heading-box">
+                        <h1>East Wall </h1>
+                        <img src="/img/sr/open.svg" />
+                        <span>Open</span>
+                    </div>
+                    <div class="mountain-detail-box">
+                        <img class="img-fluid mtn-img" src="/img/sr/mountainex1.png" />
+                        <div class="trail-box">
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/closed.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/onhold.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/closed.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="primary-block">
+                                <li class="primary-option lift-opt">
+                                    <div class="border-primary">
+                                        <span>
+                                            <img src='/img/sr/open.svg' />
+                                            Black Mountain Express * Lift
+                                        </span>
+                                    </div>
+                                    <ul class="secondary-block">
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/intermediate.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/expert.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                        <li class="secondary-option">
+                                            <span>
+                                                <img src='/img/sr/open.svg' />
+                                                <img src='/img/sr/easy.svg' />
+                                                Lower mountain greens
+                                                <img src='/img/sr/groomed.svg' class="trail-status" />
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>

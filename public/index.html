@@ -106,9 +106,9 @@
           weatherToggleElement.classList.add("active");
           document.querySelector(".nav-container").classList.add("hidden");
           document.querySelector(".widget-container").classList.add("active");
-          if (window.innerWidth>1280 && !document.querySelector(".widget-option.active")) {
-                document.getElementById("snow").classList.add("active");
-              }
+          if (window.innerWidth > 1280 && !document.querySelector(".widget-option.active")) {
+            document.getElementById("snow").classList.add("active");
+          }
         }
 
 
@@ -281,15 +281,30 @@
         }
         const topBar = document.getElementById('topBar');
         const scrollTrigger = 150; // Adjust this value as needed
-
-        window.addEventListener('scroll', () => {
-          if (window.scrollY >= scrollTrigger) {
-            topBar.classList.add('solid-bg');
+        //turn solid background on 15 seconds
+        setTimeout(()=>{topBar.classList.add("solid-bg")},12000);
+        // Function to handle scroll events
+        function handleScroll() {
+          if (window.scrollY > this.lastScrollY) {
+            // User is scrolling down
+            if (window.scrollY >= scrollTrigger) {
+              topBar.classList.add('scrolled');
+            }
           } else {
-
-            topBar.classList.remove('solid-bg');
+            // User is scrolling up
+            topBar.classList.remove('scrolled');
           }
-        });
+          //   () => {
+          //   if (window.scrollY >= scrollTrigger) {
+          //     topBar.classList.add('scrolled');
+          //   } else {
+
+          //     topBar.classList.remove('solid-bg');
+          //   }
+          // }
+          this.lastScrollY = window.scrollY;
+        }
+        window.addEventListener('scroll', handleScroll);
 
 
 

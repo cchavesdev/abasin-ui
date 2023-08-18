@@ -88,12 +88,13 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
+    
     z-index: 1;
     padding-top: 150px;
-    display: none;
+  //  display: none;
     height: 100vh;
-  
+    top: -100vh;
+  transition: ease-in all 0.3s;
     @media(max-width: 1280px) {
         padding-top: 100px;
         overflow-y: scroll;
@@ -115,7 +116,9 @@ header {
 }
 
 .popup-container.opened {
-    display: block;
+   // display: block;
+   height: 100vh;
+   top: 0;
 }
 
 .nav-container.hidden {
@@ -357,7 +360,9 @@ ul.primary-nav {
             }
 
             .widget-label {
-
+                &:hover {
+                    color: #fff;
+                }
                 @media (max-width: 1280px) {
                     margin-bottom: 24px;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.20);

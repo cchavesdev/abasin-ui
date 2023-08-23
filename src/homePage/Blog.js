@@ -36,7 +36,7 @@ export const Blog = () => {
                             </p>
                         </div>
                         <div class="col-12 col-lg-8 d-flex activity-blocks">
-                            <div class="mb-auto activity-content">
+                            <div class=" activity-content">
                                 <img class="img-fluid" src="/img/activity.png" />
                                 <div class="overlap">
                                     <h6>Alpine Riding</h6>
@@ -49,7 +49,7 @@ export const Blog = () => {
                                     <h6>Alpine Riding</h6>
                                 </div>
                             </div>
-                            <div class="mt-auto activity-content">
+                            <div class="activity-content">
                                 <img class="img-fluid" src="/img/activity.png" />
                                 <div class="overlap">
                                     <h6>Alpine Riding</h6>

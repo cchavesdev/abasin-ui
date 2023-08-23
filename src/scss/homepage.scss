@@ -279,8 +279,8 @@ background-color: #03152A;
     .promo-container {
         padding: 100px 50px 0px 50px;
         justify-content: center;
-        height: 1560px;
-
+        height: auto;
+       
         @media (max-width: 992px) {
             height: auto;
         }
@@ -290,7 +290,9 @@ background-color: #03152A;
             margin: 8px;
             text-align: center;
             max-width: calc(50% - 16px);
-
+            transform: translateY(50%);
+            transition: transform 1s ease;
+            
             @media (max-width: 992px) {
 
                 max-width: 100%;
@@ -325,10 +327,14 @@ background-color: #03152A;
             img {
                 max-width: 100%;
             }
+            &.go-top{
+                transform: translateY(0%);
+            }
+
         }
 
         .promo:nth-child(odd) {
-            margin-top: auto !important;
+         
         }
     }
 }
@@ -393,6 +399,27 @@ background-color: #03152A;
     .event-listed {
         max-width: 988px;
         margin-left: auto;
+       img{
+        transition: all 0.6s;
+        width: 90%;
+        
+        transition-delay: 0.15s;
+        
+       }
+       svg{
+        height: auto;
+        transition: all 0.6s;
+        transition-delay: 0.15s;
+       }
+        &:hover{
+            img{
+                width: 100%;
+               
+            }
+            svg{
+                width: 30px;
+            }
+        }
     }
 
     .event-desc {
@@ -404,6 +431,7 @@ background-color: #03152A;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        margin-left: auto;
 
         span {
             color: #AFCAEA;
@@ -623,6 +651,27 @@ background-color: #03152A;
         @media (max-width: 992px) {
             height: auto;
         }
+        &.focused{
+            .activity-content{
+                margin-top: 0;
+                &:nth-child(1){
+                    margin-top: 0%;
+                    align-self: flex-start;
+                    
+                }
+                &:nth-child(2){
+                    margin-top: 10%;
+                    align-self: flex-start;
+                    transition-delay: 0.3s;
+                    
+                }
+                &:nth-child(3){
+                    margin-top: 20%;
+                    align-self: flex-start;
+                    transition-delay: 0.6s;                    
+                }
+            }
+        }
     }
 
     .activity-title-box {
@@ -667,11 +716,13 @@ background-color: #03152A;
             max-width: 490px;
             position: relative;
             cursor: pointer;
-
+            transition: all 1.5s;
+            margin-top: 50%;
             &:nth-child(2) {
                 margin-left: 10px;
                 margin-right: 10px;
             }
+        
 
             .overlap {
                 position: absolute;
@@ -712,11 +763,7 @@ background-color: #03152A;
             }
         }
 
-        .activity-content:nth-child(2) {
-            align-self: center;
-
-
-        }
+        
     }
 }
 

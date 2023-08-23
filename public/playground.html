@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Opacity Scroll Effect</title>
+</head>
+<body>
+  <div class="content">
+    <p class="fade-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi qui necessitatibus error porro aspernatur, excepturi eveniet, blanditiis magnam dolorum vel tempore alias voluptatum officia illo illum incidunt soluta harum? Laborum..</p>
+    <!-- Other content goes here -->
+  </div>
+  <script>
+   const fadeText = document.querySelector('.fade-text');
+const content = document.querySelector('.content');
+let previousScrollPos = window.scrollY;
+
+window.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY;
+  const scrollDirection = scrollPos > previousScrollPos ? 'down' : 'up';
+  previousScrollPos = scrollPos;
+
+  const scrollPercent = (content.getBoundingClientRect().top / window.innerHeight) * 100;
+
+  // Calculate the opacity based on scroll position and direction
+  let opacity;
+  if (scrollDirection === 'down') {
+    opacity = Math.max(0.5, 1 - (scrollPercent * 0.01));
+  } else {
+    opacity = Math.min(1, 0.5 + (scrollPercent * 0.01));
+  }
+
+  fadeText.style.opacity = opacity;
+});
+
+  </script>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  height: 200vh; /* Adjust this value to match your content length */
+  position: relative;
+}
+
+.fade-text {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  </style>
+</body>
+</html>

@@ -282,7 +282,7 @@
         const topBar = document.getElementById('topBar');
         const scrollTrigger = 150; // Adjust this value as needed
         //turn solid background on 15 seconds
-        setTimeout(()=>{topBar.classList.add("solid-bg")},12000);
+        setTimeout(() => { topBar.classList.add("solid-bg") }, 12000);
         // Function to handle scroll events
         function handleScroll() {
           if (window.scrollY > this.lastScrollY) {
@@ -303,8 +303,28 @@
           //   }
           // }
           this.lastScrollY = window.scrollY;
+          promoAnimationHome();
         }
         window.addEventListener('scroll', handleScroll);
+
+        function promoAnimationHome() {
+
+          var container = document.querySelector(".promo-container");
+          var promo2 = document.querySelectorAll(".promo")[1];
+          if (container.getBoundingClientRect().top <= 500) {
+            promo2.classList.add("go-top");
+            setTimeout(() => {
+              document.querySelectorAll(".promo")[0].classList.add("go-top");
+            }, 1000)
+          }
+
+          var activityContainer = document.querySelector(".activities-container");
+          if (activityContainer.getBoundingClientRect().top <= 500) {
+            activityContainer.classList.add("focused");
+          }
+
+        }
+
 
 
 

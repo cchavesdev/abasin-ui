@@ -654,6 +654,7 @@ background-color: #03152A;
         &.focused{
             .activity-content{
                 margin-top: 0;
+                
                 &:nth-child(1){
                     margin-top: 0%;
                     align-self: flex-start;
@@ -713,11 +714,17 @@ background-color: #03152A;
 
         .activity-content {
 
-            max-width: 490px;
+            width: 490px;
             position: relative;
             cursor: pointer;
-            transition: all 1.5s;
+            transition: all 0.5s;
             margin-top: 50%;
+            img{
+                width: 100%;
+            }
+            &:hover{
+                width: 510px;
+            }
             &:nth-child(2) {
                 margin-left: 10px;
                 margin-right: 10px;

@@ -37,20 +37,20 @@ export const Blog = () => {
                         </div>
                         <div class="col-12 col-lg-8 d-flex activity-blocks">
                             <div class=" activity-content">
-                                <img class="img-fluid" src="/img/activity.png" />
+                                <img class="" src="/img/activity.png" />
                                 <div class="overlap">
                                     <h6>Alpine Riding</h6>
                                 </div>
 
                             </div>
                             <div class="activity-content">
-                                <img class="img-fluid" src="/img/activity.png" />
+                                <img class="" src="/img/activity.png" />
                                 <div class="overlap">
                                     <h6>Alpine Riding</h6>
                                 </div>
                             </div>
                             <div class="activity-content">
-                                <img class="img-fluid" src="/img/activity.png" />
+                                <img class="" src="/img/activity.png" />
                                 <div class="overlap">
                                     <h6>Alpine Riding</h6>
                                 </div>

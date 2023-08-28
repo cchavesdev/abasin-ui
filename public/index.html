@@ -311,7 +311,7 @@
 
           var container = document.querySelector(".promo-container");
           var promo2 = document.querySelectorAll(".promo")[1];
-          if (container.getBoundingClientRect().top <= 500) {
+          if (container && container.getBoundingClientRect().top <= 500) {
             promo2.classList.add("go-top");
             setTimeout(() => {
               document.querySelectorAll(".promo")[0].classList.add("go-top");
@@ -319,7 +319,7 @@
           }
 
           var activityContainer = document.querySelector(".activities-container");
-          if (activityContainer.getBoundingClientRect().top <= 500) {
+          if (activityContainer && activityContainer.getBoundingClientRect().top <= 500) {
             activityContainer.classList.add("focused");
           }
 

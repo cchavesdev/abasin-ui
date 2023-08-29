@@ -4,6 +4,7 @@ import './scss/variables.scss';
 import './scss/homepage.scss';
 import './scss/navigation.scss';
 import './scss/standardPage.scss';
+import './scss/fieldguide.scss';
 import { Header } from './header/Header';
 import { Hero } from './homePage/Hero';
 import { SecondaryHero } from './homePage/SecondaryHero';
@@ -18,6 +19,7 @@ import { StandardPage } from './standardPage/StandardPage';
 import { ListingPage } from './listingPage/ListingPage';
 import { Pattern } from './pattern/Pattern';
 import { SnowReport } from './snowreport/SnowReport';
+import { FieldGuide } from './fieldguide/FieldGuide';
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
           <Route path='/standard' Component={StandardPage}></Route>
           <Route path='/listing' Component={ListingPage}></Route>
           <Route path='/snow-report' Component={SnowReport}></Route>
+          <Route path='/field-guide' Component={FieldGuide}></Route>
           <Route path='/pattern-library' Component={Pattern}></Route>
         </Routes>
       </Router>

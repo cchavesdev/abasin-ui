@@ -227,7 +227,7 @@ export const Header = () => {
                         <ul>
                             <li class="widget-option" id="snow">
                                 <div class="widget-label">
-                                    <span class="widget-label-text">Snow Fall</span>
+                                    <span class="widget-label-text">Snowfall</span>
                                 </div>
                                 <div class="option-detail" data-option="snow">
 
